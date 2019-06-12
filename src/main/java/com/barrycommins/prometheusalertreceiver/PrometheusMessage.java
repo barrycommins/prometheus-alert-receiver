@@ -1,6 +1,5 @@
 package com.barrycommins.prometheusalertreceiver;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
@@ -27,11 +26,7 @@ class PrometheusMessage {
         private String status;
         private Map<String, String> labels;
         private Map<String, String> annotations;
-
-        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
         private Date startsAt;
-
-        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
         private Date endsAt;
 
         private String generatorUrl;
