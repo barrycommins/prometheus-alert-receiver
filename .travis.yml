@@ -1,5 +1,4 @@
 language: java
-jdk: oraclejdk8
 edge: true
 before_install:
 - wget -O codacy-coverage-reporter.jar http://central.maven.org/maven2/com/codacy/codacy-coverage-reporter/1.0.10/codacy-coverage-reporter-1.0.10-assembly.jar
